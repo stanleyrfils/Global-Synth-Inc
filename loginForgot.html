@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/login.css">
+  <title>Password Recovery</title>
+</head>
+<body class="bkgd-recover">
+<!-------------------- HEADER -------------------->
+  <header id="main-header">
+    <div class="company">
+      <h1 class="name">
+        <span>
+          GlobalSynth
+        </span>
+        Inc.
+      </h1>
+    </div>
+  </header>
+<!-------------------- SECTION -------------------->
+<section id="recovery">
+  <div class="heading">
+    <h3>Forgot your password?</h3>
+    <p>Please enter your GlobalSynth employee ID and email in the fields below.</p>
+  </div>
+  <div class="recover">
+    <form method="get" action="login.html" onsubmit="validateForm();">
+      <div class="recover-info">
+        <label for="employeeId" class="employee">Employee ID:</label>
+        <input id="employeeId" type="text" required>
+        <label for="email" class="email">Email:</label>
+        <input for="email" type="email" required>
+      </div>
+      <div class="stack-bottom">
+        <button class="button" >Recover</button>
+        <script type = "text/javascript">
+          function validateForm() {
+            alert ("If the information you provided matched our records, you will receive an email with further instructions to recover your GlobalSynth password.");
+          }
+        </script>
+      </div>
+    </form>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+#main h2{
+  font-size: 1.5rem;
+}
+#notify p{
+  text-align: center;
+}
+#container .newsletter .story{
+  border: none;
+  margin: 1rem;
+}
+@media (max-width: 500px){
+  #portal-header p{
+    display: none;
+  }
+  #notify p{
+    text-align: center;
+  }
+  #main h2{
+    display: none;
+  }
+  #container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container .navigation ul li{
+    text-align: center;
+  }
+  #container .newsletter .story{
+    border: none;
+    margin: 1rem;
+  }
+  #container .newsletter .story h4{
+    background: green;
+    color: white;
+  }
+  #container .stockcenter{
+    text-align: center;
+  }
+}
