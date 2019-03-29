@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/login.css">
+  <title>Login | GlobalSynth Employee Login</title>
+</head>
+<body>
+<!-------------------- HEADER -------------------->
+  <header id="main-header">
+    <div class="company">
+      <h1 class="name">
+        <span>
+          <i class="fas fa-globe-americas logo"></i>
+          GlobalSynth
+        </span>
+        Inc.
+      </h1>
+      <p id="date"></p>
+      <p class="underline">
+        <script>document.write(new Date().toLocaleDateString());</script>
+      </p>
+    </div>
+  </header>
+<!-------------------- SECTION -------------------->
+    <section id="login">
+      <div class="form">
+        <div>
+          <h2>Log In</h2>
+          <p>Please enter your <span>GlobalSynth Inc.</span> user ID and password.</p>
+        </div>
+        <div class="form-input">
+          <form method="get" action="loginPortal.html">
+            <div class="stack">
+              <label for="username" class="username">Username:</label>
+              <input id="username" type="text" required>
+              <label for="password" class="password">Password:</label>
+              <input id="password" type="password" minlength="8" required>
+            </div>
+            <div class="stack-bottom">
+              <button class="button">Log In</button>
+              <a class="forgot" href="loginForgot.html">Forgot Your Password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+<!-------------------- FOOTER -------------------->
+    <footer id="legal">
+      <p>Copyright &copy;2019 GlobalSynth Incorporated. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
